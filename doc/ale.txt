@@ -1370,6 +1370,18 @@ g:ale_keep_list_window_open                       *g:ale_keep_list_window_open*
 
   See |g:ale_open_list|
 
+g:ale_keep_preview_open                               *g:ale_keep_preview_open*
+                                                      *b:ale_keep_preview_open*
+  Type: |Number|
+  Default: `0`
+
+  When set to `1`, this option will keep the preview window even after the
+  cursor is moved and there are no warnings/errors for that line. By default,
+  when *g:ale_cursor_detail* is set to 1, the preview window is closed when
+  there is no warning/errors for the current line.
+
+  See |g:ale_cursor_detail|
+
 
 g:ale_list_window_size                                 *g:ale_list_window_size*
                                                        *b:ale_list_window_size*

@@ -142,6 +142,10 @@ let g:ale_hover_cursor = get(g:, 'ale_hover_cursor', 1)
 " entering Insert Mode.
 let g:ale_close_preview_on_insert = get(g:, 'ale_close_preview_on_insert', 0)
 
+" This flag can be set to 1 to keep the preview window open even after the
+" cursor is moved and there are no errors for the current line.
+let g:ale_keep_preview_open = get(g:, 'ale_keep_preview_open', 0)
+
 " This flag can be set to 0 to disable balloon support.
 let g:ale_set_balloons = get(g:, 'ale_set_balloons', has('balloon_eval') && has('gui_running'))
 
